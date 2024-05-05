@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  next-app:
+    build:
+      context: .
+      dockerfile: C:\Users\neto4\Desktop\login\restaurant\bigchef\Dockerfile
+  postgres:
+    image: postgres:latest
+    container_name: bigchef-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./.postgres-data:/var/lib/postgresql/data
+
+volumes:
+  .postgres-data:
+   
+    
