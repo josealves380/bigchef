@@ -1,3 +1,4 @@
+import CategoryList from "./_components/category-list";
 import Header from "./_components/header";
 
 export default function Home() {
@@ -5,6 +6,8 @@ export default function Home() {
     <main>
       <div>
         <Header />
+
+        <CategoryList />
       </div>
     </main>
   );
